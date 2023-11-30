@@ -69,7 +69,7 @@ def make_dir(base_dir: Path, dir_name: str) -> Path:
 
 
 def write_to_csv_file(
-        file_path: Path | str,
+        file_path: Path,
         data: Iterable[Iterable],
         log_message: str
 ):
@@ -86,7 +86,7 @@ def write_to_csv_file(
 
 
 def write_to_zip_file(
-        file_path: Path | str,
+        file_path: Path,
         data: Iterable[Iterable],
         log_message: str
 ):
