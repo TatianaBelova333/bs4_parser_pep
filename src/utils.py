@@ -37,7 +37,7 @@ def get_response(session: CachedSession, url: str) -> Optional[CachedResponse]:
 
 
 def find_tag(
-        soup: BeautifulSoup | Tag,
+        soup: BeautifulSoup,
         tag: Union[str, list, callable],
         attrs: Optional[dict[str, str]] = None,
         all: bool = False,
