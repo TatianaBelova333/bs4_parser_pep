@@ -147,3 +147,7 @@ dmypy.json
 http_cache.sqlite
 downloads/
 logs/
+
+
+*.bak
+**/.DS_Store
