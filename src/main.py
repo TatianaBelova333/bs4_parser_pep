@@ -221,8 +221,7 @@ def pep(
                     f"Статус в карточке: {dd_actual_status} "
                     f"Ожидаемые статусы: {expected_sts_full}"
                 )
-    for key, value in sorted(counter.items()):
-        results.append((key, value))
+    results.extend(sorted(counter.items()))
 
     all_peps_count = sum(counter.values())
     results.append(('TOTAL', all_peps_count))
